@@ -1,0 +1,15 @@
+@font-face {
+    font-family: circularStd;
+    src: url(../fonts/CircularStd-Book.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: circularStd;
+}
+
+li{
+    list-style: none;
+}
+
