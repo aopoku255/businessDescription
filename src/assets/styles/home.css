@@ -5,13 +5,17 @@
 
 
 .navbar{
-    height: 5rem;
+    /* height: 5rem; */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
     color: #160647;
     background-color: #fff;
+}
+
+.logo{
+    width: 8rem;
 }
 
 .get_started{
@@ -24,32 +28,93 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
+
 
 .nav_links{
-    padding: 0.25rem 1rem;
-    border: 1px solid #fff
     
+    border: 1px solid #fff;
+    position: relative;
+    height: 3rem;
 }
 
+.triangle{
+    position: absolute;
+    bottom: -0.35rem;
+    display: none;
+    color: #16064746
+}
+
+.nav_below{
+    position: absolute;
+    left: -5rem;
+    top: 2.5rem;
+    display: none;
+    width: 15rem;
+    padding: 1rem 0.5rem;
+    background: #fff;
+    border-radius: 8px;
+    /* border: 0.2px solid #47BEB9; */
+    /* background-color: #fff; */
+    /* box-shadow: 5px 1px #47BEB9; */
+}
 .links{
     text-decoration: none;
     color: #160647;
     display: block;
-}
+    border: 1px solid #fff;
+    padding: 0.20rem 1rem;
+    border-radius: 4px;
+    /* padding: 0 1rem; */
 
-.nav_links:hover{
-    border: 1px solid #47BEB9;
-    transition: 0.4s all;
-    border-radius: 3px;
-    
 }
 
 .nav_links:hover .links{
+    border: 1px solid #47BEB9;
     color: #47BEB9;
     transition: 0.4s all;
+    
 }
+
+.nav_links:hover{
+    border-radius: 3px;  
+}
+
+.nav_links:hover .nav_below {
+    display: block;
+    transition: 1s all;
+}
+.nav_links:hover .triangle{
+    display: block;
+}
+
+.nav_below__link_item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-radius: 8px;
+    width: 100%;
+}
+.nav_below__link_item:hover{
+    background-color: #47beb829;
+    transition: 0.4s all;
+}
+
+.nav_below__links{
+    text-decoration: none;
+    color: #160647;
+    display: block;
+    padding: 0 0 0 1rem;
+}
+
+.nav_below__link_item:hover .nav_below__links{
+    color: #47BEB9;
+   
+}
+
+
 
 .navbar_login{
     text-decoration: none;
@@ -59,7 +124,10 @@
 
 .navbar_login:hover{
     color: #47BEB9;
+   
 }
+
+
 
 .btn_getstarted{
     display: flex;
@@ -74,7 +142,7 @@
 }
 
 .hero{
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,14 +196,36 @@
     background-color: #76838f3e;
 }
 
+.collapse_card{
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0;
+    margin: auto;
+    /* padding: 0 1rem 0 0 ;  */
+}
+
+.collapse_container{
+    width: 96%;
+    background-color: #47beb822;
+    padding: 0;
+    /* margin: 0 1rem 0 0; */
+}
+
 @media (max-width: 996px) {
+    
+    .hero{
+        justify-content: flex-start;
+    }
     .navbar_items{
         display: none;
     }
 
     .hero h1{
         /* font-size: 4rem; */
-        width: 80%;
+        margin: 10rem 0 1rem 0;
+        /* width: 10%; */
     }
 }
 
@@ -153,9 +243,10 @@
     }
   
     .hero h1{
-        font-size: 3rem;
+        margin: 5rem 0 1rem 0;
+        font-size:2.5rem;
         line-height: 44px;
-        width: 80%;
+        width: 90%;
     }
     .hero_text{
         margin-top: 0;
@@ -166,6 +257,7 @@
         height: 1.8rem;
        padding: 0rem 0.8rem;
        font-size: 11px;
+       width: 100%
     }
     .logo{
         width: 5rem;
