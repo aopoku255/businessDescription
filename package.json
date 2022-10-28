@@ -1,5 +1,6 @@
 {
   "name": "businessd-description",
+  "description": "business description",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

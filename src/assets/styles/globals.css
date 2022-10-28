@@ -9,6 +9,14 @@
     font-family: circularStd;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-y: hidden;
+}
+
 li{
     list-style: none;
 }

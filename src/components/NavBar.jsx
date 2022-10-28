@@ -37,7 +37,7 @@ const NavBar = () => {
           <Link href="" className="navbar_login">
             Login
           </Link>
-          <button className="btn_getstarted">Get Started ― It's Free</button>
+          <button className="btn_getstarted">Write business plan now</button>
         </div>
         <div className="d-sm-none">
           <BsList size={20} />

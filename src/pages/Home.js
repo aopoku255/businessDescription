@@ -8,24 +8,24 @@ const Home = () => {
       <NavBar />
       <div className="hero">
         <h1>
-          Say ‘goodbye’ to the blank business{" "}
-          <span className="g-text">description</span>
+          Say ‘goodbye’ to the blank busi
+          <span className="g-text">ness description</span>
         </h1>
         <p className="hero_text">
           Get your <span className="deep">free account today</span>
         </p>
         <div className="signin_btns d-sm-flex align-items-center justify-content-center">
-          <div className="btn_getstarted bg_deep">
+          <button className="btn_getstarted bg_deep">
             <img src={google} alt="" className="mx-2 google_image" /> Sign up
             with Google
-          </div>
+          </button>
           <p className="mx-2 mt-2 gray_text d-sm-block d-none">or</p>
-          <div className="btn_getstarted mt-sm-0 mt-2">
+          <button className="btn_getstarted mt-sm-0 mt-2">
             Sign up with email{" "}
             <span className="mx-2">
               <ImArrowRight2 />
             </span>
-          </div>
+          </button>
         </div>
         <p className="mt-4 gray_text">No credit card required</p>
         <div className="line"></div>
