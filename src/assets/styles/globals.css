@@ -13,9 +13,9 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+/* body{
     overflow-y: hidden;
-}
+} */
 
 li{
     list-style: none;

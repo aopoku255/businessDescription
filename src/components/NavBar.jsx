@@ -123,8 +123,10 @@ const NavBar = () => {
         <nav className="collapse_card card border-0 mt-3 d-lg-none">
           <div className="collapse_container">
             <div className="d-flex justify-content-between align-items-center">
-              <Link to="">Template</Link>
-              <Link to="">Template</Link>
+              <Link to="" className="link_item">
+                Template
+              </Link>
+              <FiChevronDown />
             </div>
           </div>
         </nav>

@@ -2,6 +2,10 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import google from "../assets/images/google.svg";
 import { ImArrowRight2 } from "react-icons/im";
+import { BsCardText } from "react-icons/bs";
+import fast from "../assets/images/fast.svg";
+import write from "../assets/images/write.svg";
+import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
@@ -28,7 +32,49 @@ const Home = () => {
           </button>
         </div>
         <p className="mt-4 gray_text">No credit card required</p>
-        <div className="line"></div>
+        <div className="line mb-4"></div>
+        <Link to="" className="rounded_btn">
+          <div className="d-flex align-items-center">
+            <div className="circle_white rounded-circle mx-2">
+              <img src={fast} alt="" width={30} />
+            </div>
+            <div className="d-flex flex-column line_height">
+              <p className="gray_text text-uppercase small_text">
+                For Business Plan Writers
+              </p>
+              <p className="deep_text">Write Business Plan 10x faster</p>
+            </div>
+          </div>
+          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
+        </Link>
+        <Link to="" className="rounded_btn">
+          <div className="d-flex align-items-center">
+            <div className="circle_white rounded-circle mx-2">
+              <img src={write} alt="" width={30} />
+            </div>
+            <div className="d-flex flex-column line_height">
+              <p className="gray_text text-uppercase small_text">
+                For Business Plan Writers
+              </p>
+              <p className="deep_text">Write Business Plan 10x faster</p>
+            </div>
+          </div>
+          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
+        </Link>
+        <Link to="" className="rounded_btn">
+          <div className="d-flex align-items-center">
+            <div className="circle_white rounded-circle mx-2">
+              <img src={fast} alt="" width={30} />
+            </div>
+            <div className="d-flex flex-column line_height">
+              <p className="gray_text text-uppercase small_text">
+                For Business Plan Writers
+              </p>
+              <p className="deep_text">Write Business Plan 10x faster</p>
+            </div>
+          </div>
+          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
+        </Link>
       </div>
     </div>
   );

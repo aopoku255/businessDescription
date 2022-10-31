@@ -142,7 +142,7 @@
 }
 
 .hero{
-    height: calc(100vh - 3rem);
+    height: calc(100% - 3rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,6 +164,7 @@
     color: #160647;
     line-height: 72px;
     letter-spacing: -.03em;
+    margin-top: 5rem;
 }
 
 .hero .g-text{
@@ -193,7 +194,7 @@
 .line{
     height: 1px;
     width: 80%;
-    background-color: #76838f3e;
+    background-color: rgba(66,133,156,.12)
 }
 
 .collapse_card{
@@ -213,6 +214,60 @@
     /* margin: 0 1rem 0 0; */
 }
 
+.rounded_btn{
+  
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    align-items: center;
+    background-color: rgba(255,255,255,.5);
+    height: 6rem;
+    border-radius: 500px;
+    padding: 0 1rem 0 0;
+    border: 1px solid #def7f0;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.rounded_btn:hover{
+    background-color: rgba(255,255,255,.7);
+    border: 1px solid #b7f9e7;
+    /* transition: 0.4s all; */
+    box-shadow: 0 72px 72px -32px rgba(51, 51, 51, 0.381);
+    -webkit-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+}
+
+
+.line_height{
+    line-height: 0.5em;
+    margin-top: 0.5rem;
+}
+.circle_white{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #47BEB9;
+    background-color: #fff;
+    
+}
+
+.rounded_btn:hover .circle_white{
+    border: 1px solid #b7f9e7;
+    transition: 0.4s all;
+}
+.small_text{
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.deep_text{
+    font-weight: 900;
+    color: #160647;
+    font-size: 1.2rem;
+}
 @media (max-width: 996px) {
     
     .hero{
@@ -239,7 +294,7 @@
     }
 
     .hero{
-        height: calc(100vh - 3rem);
+        height: calc(100% - 3rem);
     }
   
     .hero h1{
@@ -259,13 +314,25 @@
        font-size: 11px;
        width: 100%
     }
-    .logo{
-        width: 5rem;
-    }
+    /* .logo{
+        width: 8rem;
+    } */
     .google_image{
         width: 0.8rem;
     }
     .gray_text{
         font-size: 11px;
+    }
+
+    .rounded_btn{
+        width: 95%;
+    }
+
+    .deep_text{
+        line-height: 1.2rem;
+    }
+
+    .icon_arrow{
+        display: none;
     }
 }
