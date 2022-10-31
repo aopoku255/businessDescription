@@ -12,8 +12,8 @@ const Home = () => {
       <NavBar />
       <div className="hero">
         <h1>
-          Say ‘goodbye’ to the blank busi
-          <span className="g-text">ness description</span>
+          Say ‘goodbye’ to the blank business
+          <span className="g-text"> description</span>
         </h1>
         <p className="hero_text">
           Get your <span className="deep">free account today</span>
