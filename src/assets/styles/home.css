@@ -399,5 +399,8 @@
     .text_with_logo{
         line-height: 30px;
     }
+    .about_large_text{
+        font-size: 2rem;
+    }
 }
 
