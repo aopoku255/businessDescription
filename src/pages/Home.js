@@ -6,10 +6,28 @@ import { BsCardText } from "react-icons/bs";
 import fast from "../assets/images/fast.svg";
 import write from "../assets/images/write.svg";
 import { Link } from "react-router-dom";
+import logo from "../logo.svg";
+import Typed from "react-typed";
+import { useEffect, useRef } from "react";
 const Home = () => {
+  // useEffect(() => {
+  //   const typed = new Typed(el.current, {
+  //     strings: ["Handy", "Mandy", "Candy", "More Strings"], // Strings to display
+  //     // Speed settings, try diffrent values untill you get good results
+  //     startDelay: 300,
+  //     typeSpeed: 100,
+  //     backSpeed: 100,
+  //     backDelay: 100,
+  //   });
+
+  //   // Destropying
+  //   return () => {
+  //     typed.destroy();
+  //   };
+  // }, []);
+
   return (
     <div>
-      <NavBar />
       <div className="hero">
         <h1>
           Say ‘goodbye’ to the blank business
@@ -19,12 +37,12 @@ const Home = () => {
           Get your <span className="deep">free account today</span>
         </p>
         <div className="signin_btns d-sm-flex align-items-center justify-content-center">
-          <button className="btn_getstarted bg_deep">
+          <button className="btn_getstarted bg_deep d-block w-100 text-nowrap">
             <img src={google} alt="" className="mx-2 google_image" /> Sign up
             with Google
           </button>
           <p className="mx-2 mt-2 gray_text d-sm-block d-none">or</p>
-          <button className="btn_getstarted mt-sm-0 mt-2">
+          <button className="btn_getstarted mt-sm-0 mt-2 d-block w-100">
             Sign up with email{" "}
             <span className="mx-2">
               <ImArrowRight2 />
@@ -75,6 +93,45 @@ const Home = () => {
           </div>
           <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
         </Link>
+      </div>
+      <div className="text-center large_para">
+        <p>
+          Experience the full power of an AI content generator that{" "}
+          <span className="large_bold">
+            delivers premium results in seconds.
+          </span>
+        </p>
+      </div>
+      <div className="large_line_height">
+        <h1 className="large_num text-center">1,500,000+</h1>
+        <div className="text-center text_with_logo">
+          <p>
+            professionals & teams choose{" "}
+            <Link to="/" className="navbar_brand">
+              <img src={logo} alt="" className="mb-2" width={120} />
+            </Link>
+          </p>
+        </div>
+        <div>
+          <div className="about_large_text text-center">
+            <div>Bdesc.ai helps</div>
+            <span className="about_large_text_color">
+              <Typed
+                strings={[
+                  "Business Owners",
+                  "Startup teams",
+                  "Marketing Managers",
+                ]}
+                typeSpeed={50}
+                showCursor={false}
+                loop={true}
+                smartBackspace={true}
+                backSpeed={40}
+                backDelay={3000}
+              ></Typed>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
