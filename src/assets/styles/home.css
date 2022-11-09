@@ -314,6 +314,134 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.results_text{
+    color: #160647;
+    font-size: 1.2rem;
+    width: 30%;
+    margin: 2rem auto;
+}
+
+.card_business{
+    height: 12rem;
+    background-color: #47beb823;
+    min-width: 15rem;
+    width: 25rem;
+}
+
+.example_templates{
+    width: 95%;
+    margin: auto;
+    background-color: #47beb815;
+    padding: 3rem 0;
+    border-radius: 20px;
+
+}
+
+.example_template_card{
+    width: 90%;
+    background-color: #fff;
+    margin: 2rem auto;
+    padding: 4rem 0;
+    border-radius: 20px;
+
+}
+.example_template_card_line{
+    width: 95%;
+    margin: auto;
+    height: 1px;
+    /* width: 80%; */
+    background-color: rgba(66,133,156,.12)
+}
+
+.example_template_card_main{
+    width: 80%;
+    margin: auto;
+    color: #160647;
+}
+.heading_deep{
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 1.2;
+}
+.heading_deep_2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    line-height: 1.2;
+}
+.heading_deep_para{
+    font-size: 1.2rem;
+}
+.heading_deep_3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    /* line-height: 1.2; */
+}
+
+.heading_link{
+    text-decoration: none;
+    color: #47BEB9;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.heading_link:hover{
+    color: #47BEB9;
+}
+
+.heading_list li{
+    list-style: disc;
+}
+
+.deep_header{
+    font-weight: 900;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    color: #160647;
+    font-size: 3rem;
+}
+
+.num_circle{
+    border: 1px solid #b7f9e7;
+    width: 2.5rem;
+    height: 2.5rem;
+   
+    color: #160647;
+    font-weight: 600;
+}
+
+.template-bg{
+    background-color: #47beb822;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.img_template{
+    width: 60%;
+}
+
+.rounded_text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    /* margin-top: 0.8rem; */
+}
+
+.lineheight{
+    line-height: 1.2;
+}
+
+.deep_header_text{
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+
+.deep_header_text_para{
+    width: 30%;
+}
 @media (max-width: 996px) {
     
     .hero{
@@ -401,6 +529,36 @@
     }
     .about_large_text{
         font-size: 2rem;
+    }
+
+    .rounded_text{
+        font-size: 0.8rem;
+    }
+    .num_circle{
+        min-height: 2.5rem;
+        min-width: 3rem;
+    }
+    .results_text{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .about_large_text{
+        margin: 0;
+    }
+
+    .img_template{
+        width: 90%;
+    }
+
+    .btn_control{
+        width: 50%;
+        height: 2rem;
+    }
+    .deep_header_text{
+        font-size: 2rem;
+    }
+    .deep_header_text_para{
+        width: 80%;
     }
 }
 
