@@ -22,7 +22,7 @@ const NavBar = () => {
         <ul className="navbar_items">
           <li className="nav_links">
             <Link to="/" className="links">
-              Templates{" "}
+              Sectors{" "}
               <span>
                 <FiChevronDown />
               </span>
@@ -34,44 +34,44 @@ const NavBar = () => {
             <ul className="nav_below shadow-lg">
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Executive summary
+                  Financial Services
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Company description
+                  Consumer Goods
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Market analysis
+                  Investment Funds
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Organization
+                  Technology
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Goods and services
+                  Real Estate
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Marketing
+                  Healthcare
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Financial projections
+                  Media
                 </Link>
               </li>
             </ul>
           </li>
           <li className="nav_links">
             <Link href="/" className="links">
-              Resources
+              Services
               <span>
                 <FiChevronDown />
               </span>
@@ -82,29 +82,57 @@ const NavBar = () => {
             <ul className="nav_below shadow-lg">
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Executive summary
+                  Investor Materials
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Company description
+                  Startegic Advisory
                 </Link>
               </li>
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
-                  Market analysis
+                  Market Research
+                </Link>
+              </li>
+              <li className=" nav_below__link_item">
+                <Link to="" className="nav_below__links">
+                  Legal Services
+                </Link>
+              </li>
+              <li className=" nav_below__link_item">
+                <Link to="" className="nav_below__links">
+                  Fractional CFO Services
                 </Link>
               </li>
             </ul>
           </li>
           <li className="nav_links">
             <Link href="/" className="links">
-              Weekly Demos
+              Business Plans
+              <span>
+                <FiChevronDown />
+              </span>
             </Link>
+            <div className="triangle">
+              <BsFillTriangleFill />
+            </div>
+            <ul className="nav_below shadow-lg">
+              <li className=" nav_below__link_item">
+                <Link to="" className="nav_below__links">
+                  Business Financing
+                </Link>
+              </li>
+              <li className=" nav_below__link_item">
+                <Link to="" className="nav_below__links">
+                  Startegy
+                </Link>
+              </li>
+            </ul>
           </li>
           <li className="nav_links">
             <Link href="/" className="links">
-              Pricing
+              Pitch Desk
             </Link>
           </li>
         </ul>
@@ -113,7 +141,12 @@ const NavBar = () => {
           <Link href="" className="navbar_login">
             Login
           </Link>
-          <button className="btn_getstarted">Write business plan now</button>
+          <Link
+            to="/write-now"
+            className="btn_getstarted text-decoration-none text-white"
+          >
+            Write business plan now
+          </Link>
         </div>
         <div className="d-sm-none">
           <IoMenu size={20} onClick={handleClick} />

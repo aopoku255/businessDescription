@@ -1,380 +1,309 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import "../assets/styles/home.css";
 import google from "../assets/images/google.svg";
 import { ImArrowRight2 } from "react-icons/im";
-import { BsCardText } from "react-icons/bs";
-import fast from "../assets/images/fast.svg";
-import write from "../assets/images/write.svg";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { ImInsertTemplate } from "react-icons/im";
+import { FaBusinessTime } from "react-icons/fa";
+import { SiMicrostrategy } from "react-icons/si";
+import { GiTeacher } from "react-icons/gi";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { AiOutlineFileSearch } from "react-icons/ai";
+import { GiReceiveMoney } from "react-icons/gi";
+import { FaPeopleArrows } from "react-icons/fa";
+import { TbEdit } from "react-icons/tb";
+import { TfiWrite } from "react-icons/tfi";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../logo.svg";
-import Typed from "react-typed";
-import { useEffect, useRef } from "react";
-import template from "../assets/images/template.svg";
-import template2 from "../assets/images/template2.svg";
-import template3 from "../assets/images/template3.svg";
-import template1 from "../assets/images/template1.png";
-import line from "../assets/images/line.svg";
-import line2 from "../assets/images/line2.svg";
-import line3 from "../assets/images/line3.svg";
+import CountUp from "react-countup";
+
 const Home = () => {
-  // useEffect(() => {
-  //   const typed = new Typed(el.current, {
-  //     strings: ["Handy", "Mandy", "Candy", "More Strings"], // Strings to display
-  //     // Speed settings, try diffrent values untill you get good results
-  //     startDelay: 300,
-  //     typeSpeed: 100,
-  //     backSpeed: 100,
-  //     backDelay: 100,
-  //   });
-
-  //   // Destropying
-  //   return () => {
-  //     typed.destroy();
-  //   };
-  // }, []);
-
   return (
     <div>
       <div className="hero">
-        <h1>
-          Say ‘goodbye’ to the blank business
-          <span className="g-text"> description</span>
+        <h1 className="text-capitalize">
+          Start, Grow and Scale Your Business{" "}
+          <span className="g-text">Faster</span>
         </h1>
-        <p className="hero_text">
-          Get your <span className="deep">free account today</span>
+        <p className="home_para my-5">
+          Bdesc.ai Business Plans works with international companies from
+          Startups to Fortune 500 across a diverse range of industries to
+          prepare stunning business plans, pitch decks, and investment
+          materials.
         </p>
-        <div className="signin_btns d-sm-flex align-items-center justify-content-center">
-          <button className="btn_getstarted bg_deep d-block w-100 text-nowrap">
-            <img src={google} alt="" className="mx-2 google_image" /> Sign up
-            with Google
+        <div className="signin_btns pb-5 d-sm-flex align-items-center justify-content-center">
+          <button className="btn_getstarted  bg_deep d-block w-100 text-nowrap">
+            <RiCustomerService2Fill className="mx-2" size={20} />
+            Get A Quote
           </button>
-          <p className="mx-2 mt-2 gray_text d-sm-block d-none">or</p>
-          <button className="btn_getstarted mt-sm-0 mt-2 d-block w-100">
-            Sign up with email{" "}
+          <p className="mx-2 mt-2 gray_text d-sm-block d-none"></p>
+          <button className="btn_getstarted text-nowrap mt-sm-0 mt-2 d-block w-100">
+            {/* <ImInsertTemplate className="mx-2" size={30} /> */}
+            View Sample{" "}
             <span className="mx-2">
-              <ImArrowRight2 />
+              <ImArrowRight2 size={20} />
             </span>
           </button>
         </div>
-        <p className="mt-4 gray_text">No credit card required</p>
-        <div className="line mb-4"></div>
-        <Link to="" className="rounded_btn">
-          <div className="d-flex align-items-center">
-            <div className="circle_white rounded-circle mx-2">
-              <img src={fast} alt="" width={30} />
-            </div>
-            <div className="d-flex flex-column line_height">
-              <p className="gray_text text-uppercase small_text">
-                For Business Plan Writers
-              </p>
-              <p className="deep_text">Write Business Plan 10x faster</p>
-            </div>
-          </div>
-          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
-        </Link>
-        <Link to="" className="rounded_btn">
-          <div className="d-flex align-items-center">
-            <div className="circle_white rounded-circle mx-2">
-              <img src={write} alt="" width={30} />
-            </div>
-            <div className="d-flex flex-column line_height">
-              <p className="gray_text text-uppercase small_text">
-                For Business Plan Writers
-              </p>
-              <p className="deep_text">Write Business Plan 10x faster</p>
-            </div>
-          </div>
-          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
-        </Link>
-        <Link to="" className="rounded_btn">
-          <div className="d-flex align-items-center">
-            <div className="circle_white rounded-circle mx-2">
-              <img src={fast} alt="" width={30} />
-            </div>
-            <div className="d-flex flex-column line_height">
-              <p className="gray_text text-uppercase small_text">
-                For Business Plan Writers
-              </p>
-              <p className="deep_text">Write Business Plan 10x faster</p>
-            </div>
-          </div>
-          <ImArrowRight2 color="#47BEB9" size={20} className="icon_arrow" />
-        </Link>
       </div>
-      <div className="text-center large_para">
-        <p>
-          Experience the full power of an AI content generator that{" "}
-          <span className="large_bold">
-            delivers premium results in seconds.
-          </span>
-        </p>
-      </div>
-      <div className="pb-5 mb-4">
-        <img src={template} alt="" className="d-block mx-auto img_template" />
-        <button className="btn_getstarted d-sm-block mx-auto text-nowrap btn_control mt-3 shadow-lg">
-          Use this template{" "}
-          <span className="mx-2">
-            <ImArrowRight2 />
-          </span>
-        </button>
-      </div>
-      <div className="large_line_height">
-        <h1 className="large_num text-center">1,500,000+</h1>
-        <div className="text-center text_with_logo">
-          <p>
-            professionals & teams choose{" "}
-            <Link to="/" className="navbar_brand">
-              <img src={logo} alt="" className="mb-2" width={120} />
-            </Link>
-          </p>
-        </div>
-        <div>
-          <div className="about_large_text text-center">
-            <div>Bdesc.ai helps</div>
-            <span className="about_large_text_color">
-              <Typed
-                strings={[
-                  "Business Owners",
-                  "Startup teams",
-                  "Marketing Managers",
-                ]}
-                typeSpeed={50}
-                showCursor={true}
-                loop={true}
-                smartBackspace={true}
-                backSpeed={50}
-                backDelay={3000}
-                cursorChar="_"
-              ></Typed>
-            </span>
-          </div>
-          <div className="text-center results_text">
-            Get better results in a fraction of the time. Finally, a writing
-            tool you’ll actually use.
-          </div>
-        </div>
-      </div>
-      <div className="example_templates ">
-        <div className="example_template_card">
-          <div className="example_template_card_line"></div>
-          <div className="example_template_card_main">
-            <div>
-              <h1 className="heading_deep">
-                3 Examples of Business Plan Templates
-              </h1>
-              <h1 className="heading_deep_2">Simple Business Plan Template</h1>
-              <p className="heading_deep_para">
-                [name of business] is a new business that will provide
-                [description of problem that the business solves].The business
-                will solve this problem by [description of how the business will
-                solve the problem].
-              </p>
-              <p className="heading_deep_para">
-                The target market for this product or service is [description of
-                target market for this product or service].The business plans to
-                reach its target market by [explain how you plan to reach your
-                target market and make money].
-              </p>
-              <div className="">
-                <h1 className="heading_deep_3">
-                  More:{" "}
-                  <Link to="" className="heading_link">
-                    Use this free template to create your startup business plan
-                    in seconds
-                  </Link>
-                </h1>
-              </div>
-            </div>
-            <div>
-              <h1 className="heading_deep_2">
-                Business Plan For A Startup Template
-              </h1>
-              <p className="heading_deep_para">
-                [Company name] is a startup that is focused on solving [problem]
-                in the [market].The executive team behind [company] is made up
-                of [name], who has been working in the field of [field] for over
-                20 years.
-              </p>
-              <p className="heading_deep_para">
-                The team has already begun to build the product, and it will be
-                ready to launch in the next few months.The company has plans to
-                raise $[amount] in funding, which will be used to scale the
-                business and continue to develop new features.The company plans
-                to focus on [market] first, then expand into other markets.
-              </p>
-              <div className="">
-                <h1 className="heading_deep_3">
-                  More:{" "}
-                  <Link to="" className="heading_link">
-                    Use this free template to create your startup business plan
-                    in seconds
-                  </Link>
-                </h1>
-              </div>
-            </div>
-            <div>
-              <h1 className="heading_deep_2">
-                Business Plan For A Food Truck Template
-              </h1>
-              <p className="heading_deep_para">Hi [Name/Bank],</p>
-              <p className="heading_deep_para">
-                My name is [name], and I'm the owner of [name of food truck].
-                I'm so excited to share with you my food truck business plan.My
-                food truck, [name of food truck], is a mobile restaurant that
-                sells [food truck menu]. We sell our fare at special events,
-                festivals, and at catering gigs.
-              </p>
-              <p className="heading_deep_para">
-                Our target market is people who are looking for healthy and
-                delicious food that's not too expensive.I'm starting my food
-                truck business because I want to share the joy of eating great
-                food with everyone. I've been cooking for years, and I think
-                that the world needs more tasty and healthy options for people
-                who want to eat clean but don't want to sacrifice taste or
-                quality.
-              </p>
-              <p className="heading_deep_para">
-                We're going to promote our business by participating in local
-                food truck festivals and getting the word out through social
-                media and word of mouth.
-              </p>
-              <p className="heading_deep_para">
-                We'll also offer coupons on our website and send out newsletters
-                to our mailing list of loyal customers.In terms of financials,
-                we estimate that we'll have expenses of $[number] in year one,
-                which includes startup costs, with projected revenue of
-                $[number].
-              </p>
-              <div className="">
-                <h1 className="heading_deep_3">
-                  More:{" "}
-                  <Link to="" className="heading_link">
-                    Use this free template to create your startup business plan
-                    in seconds
-                  </Link>
-                </h1>
-              </div>
-            </div>
-            <h1 className="heading_deep">
-              How to use Bdesc.ai business plan template
-            </h1>
-            <p className="heading_deep_para">
-              To access the business plan generator, click{" "}
-              <Link className="heading_link">here</Link>. You’ll need to be
-              logged in to see the template.{" "}
-            </p>
-            <p className="heading_deep_para mt-5">
-              You’ll be directed to a page that prompts you to fill out the main
-              points of your template:
-            </p>
-            <ul className="heading_list">
-              <li className="heading_deep_para">Your business name </li>
-              <li className="heading_deep_para">
-                Describe the problem your business solves{" "}
-              </li>
-              <li className="heading_deep_para">
-                Describe how your business will solve that problem
-              </li>
-              <li className="heading_deep_para">Target market description</li>
-              <li className="heading_deep_para">Revenue model description</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <h1 className="text-center deep_header">How it works</h1>
-      <div className="container">
-        <div className="d-sm-flex justify-content-center align-items-center">
-          <div className="template-bg">
-            <img src={template2} alt="" className="img-fluid" width={500} />
-          </div>
-          <div className="d-flex p-sm-none py-4 align-items-start justify-content-start mx-4">
-            <div className="rounded-circle num_circle d-flex justify-content-center align-items-center">
-              1
-            </div>
-            <div className="d-flex flex-column justify-content-start align-items-start">
-              <h1 className="rounded_text">Enter what you need to write</h1>
-              <p className="mx-3">
-                Choose from emails, social posts, long-form blog posts, and
-                more!
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src={line}
-          alt=""
-          className="mx-auto d-sm-block d-none my-3"
-          width={500}
-        />
-        <div className="d-sm-flex flex-sm-row-reverse justify-content-center align-items-center">
-          <div className="template-bg">
-            <img src={template3} alt="" className="img-fluid" width={500} />
-          </div>
-          <div className="d-flex p-sm-none py-4 align-items-start justify-content-start mx-4">
-            <div className="rounded-circle num_circle d-flex justify-content-center align-items-center">
-              2
-            </div>
-            <div className="d-flex flex-column justify-content-start align-items-start">
-              <h1 className="rounded_text">Enter what you need to write</h1>
-              <p className="mx-3">
-                Enter a few sentences about your project/campaign.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src={line2}
-          alt=""
-          className="mx-auto d-sm-block d-none my-3"
-          width={500}
-        />
-        <div className="d-sm-flex justify-content-center align-items-center">
-          <div className="template-bg">
-            <img src={template1} alt="" className="img-fluid" width={500} />
-          </div>
-          <div className="d-flex p-sm-none py-4 align-items-start justify-content-start mx-4">
-            <div className="rounded-circle num_circle d-flex justify-content-center align-items-center">
-              3
-            </div>
-            <div className="d-flex flex-column justify-content-start align-items-start">
-              <h1 className="rounded_text">Enter what you need to write</h1>
-              <p className="mx-3">
-                Choose from emails, social posts, long-form blog posts, and
-                more!
-              </p>
-            </div>
-          </div>
-        </div>
-        <img
-          src={line3}
-          alt=""
-          className="mx-auto d-sm-block d-none my-3"
-          width={500}
-        />
-        <div className="d-flex align-items-center justify-content-center">
-          <div className="rounded-circle num_circle d-flex justify-content-center align-items-center">
-            4
-          </div>
 
-          <h1 className="rounded_text mt-2">Enter what you need to write</h1>
-        </div>
-        <p className="text-center w-50 mx-auto">
-          Use Copy.ai’s editor to rewrite paragraphs and polish up sentences.
-          Then, just copy and paste the work wherever you need it.
+      <div className="">
+        <h1 className="text-center headers mb-3">Professional Services</h1>
+        <p className="home_para">
+          Bdesc.ai Business Plans offers a variety of services to help companies
+          navigate market research, strategic planning, and the capital raising
+          process.
         </p>
-        <div className="lineheight">
-          <h1 className="text-center deep_header_text">Ready to level-up?</h1>
-          <p className="text-center mx-auto deep_header_text_para">
-            Write 10x faster, engage your audience, & never struggle with the
-            blank page again.
+        <div className="container">
+          <div className="row gy-3 mt-5">
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <SiMicrostrategy size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Startegic Advisory</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <FaBusinessTime size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Business Plans</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <GiTeacher size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Pitch Desk</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="row gy-3 mt-sm-5">
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <GiTeacher size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Pitch Desk</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <FaBusinessTime size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Business Plans</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="" className="col-sm-4 text-decoration-none cards">
+              <div className="cards_container">
+                <div className="d-flex justify-content-center align-items-center">
+                  <div className="rounded-circle">
+                    <SiMicrostrategy size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <div className="home_card__text">
+                    <h6>Startegic Advisory</h6>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <Link to="" className="home_card_link">
+                      Read More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="brands_container">
+            <div className="line mx-auto move_down"></div>
+            <h1 className="text-center headers mb-3 w-50 mx-auto">
+              Outstanding Quality Tangible Results
+            </h1>
+            <p className="home_para mt-5">
+              Learn why the leading executives and startup founders consistently
+              trust Pro Business Plans.
+            </p>
+            <div className="row mt-5">
+              <div className="col-sm-4">
+                <div className="brand_card_container">
+                  <div className="rounded-circle mx-auto mb-5">
+                    <HiOutlineUserGroup
+                      size={30}
+                      style={{ color: "#47BEB9" }}
+                    />
+                  </div>
+                  <h3 className="text-center brand_card_header mb-3 text-uppercase">
+                    Expert Team
+                  </h3>
+                  <p className="text-center brand_card__para">
+                    The specialized team at Pro Business Plans is more
+                    professional and experienced than any other company. All of
+                    the members have a background in investment banking.
+                  </p>
+                  <div className="d-flex justify-content-0center align-items-center">
+                    <Link to="" className="brand_btn">
+                      View More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="brand_card_container">
+                  <div className="rounded-circle mx-auto mb-5">
+                    <AiOutlineFileSearch
+                      size={30}
+                      style={{ color: "#47BEB9" }}
+                    />
+                  </div>
+                  <h3 className="text-center brand_card_header mb-3 text-uppercase">
+                    RELIABLE RESEARCH
+                  </h3>
+                  <p className="text-center brand_card__para">
+                    The specialized team at Pro Business Plans is more
+                    professional and experienced than any other company. All of
+                    the members have a background in investment banking.
+                  </p>
+                  <div className="d-flex justify-content-0center align-items-center">
+                    <Link to="" className="brand_btn">
+                      View More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-4">
+                <div className="brand_card_container">
+                  <div className="rounded-circle mx-auto mb-5">
+                    <TbEdit size={30} style={{ color: "#47BEB9" }} />
+                  </div>
+                  <h3 className="text-center brand_card_header mb-3 text-uppercase">
+                    FULLY CUSTOM
+                  </h3>
+                  <p className="text-center brand_card__para">
+                    The specialized team at Pro Business Plans is more
+                    professional and experienced than any other company. All of
+                    the members have a background in investment banking.
+                  </p>
+                  <div className="d-flex justify-content-0center align-items-center">
+                    <Link to="" className="brand_btn">
+                      View More
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="example_templates">
+          <h1 className="text-center headers mb-3 w-50 mx-auto">
+            Being an Industry Leader is Earned, Not Given.
+          </h1>
+          <p className="home_para mt-4">
+            Bdesc.ai Business Plans offers a variety of services to help
+            companies navigate market research, strategic planning, and the
+            capital raising process.
           </p>
-          <div className="pb-5 mb-4 mt-4">
-            <button className="btn_getstarted d-sm-block mx-auto text-nowrap btn_control mt-3 shadow-lg">
-              Get Started for Free{" "}
-              <span className="mx-2">
-                <ImArrowRight2 />
-              </span>
-            </button>
+          <div className="row mt-5">
+            <div className="col-sm-3">
+              <div className="rounded-circle mx-auto">
+                <GiReceiveMoney size={30} style={{ color: "#47BEB9" }} />
+              </div>
+              <div className="fund_cont">
+                <h3 className="text-center text-uppercase fund">
+                  ${" "}
+                  <span>
+                    <CountUp start={0} end={1000} duration={3} />
+                  </span>
+                  M+
+                </h3>
+                <p className="fund_text">Funding Raised</p>
+              </div>
+            </div>
+            <div className="col-sm-3">
+              <div className="rounded-circle mx-auto">
+                <FaChalkboardTeacher size={30} style={{ color: "#47BEB9" }} />
+              </div>
+              <div className="fund_cont">
+                <h3 className="text-center text-uppercase fund">
+                  ${" "}
+                  <span>
+                    <CountUp start={0} end={1000} duration={3} />
+                  </span>
+                  K+
+                </h3>
+                <p className="fund_text">BUSINESS CONSULTATIONS</p>
+              </div>
+            </div>
+            <div className="col-sm-3">
+              <div className="rounded-circle mx-auto">
+                <TfiWrite size={30} style={{ color: "#47BEB9" }} />
+              </div>
+              <div className="fund_cont">
+                <h3 className="text-center text-uppercase fund">
+                  ${" "}
+                  <span>
+                    <CountUp start={0} end={1000} duration={3} />
+                  </span>
+                  K+
+                </h3>
+                <p className="fund_text">WRITTEN BUSINESS PLANS</p>
+              </div>
+            </div>
+            <div className="col-sm-3">
+              <div className="rounded-circle mx-auto">
+                <FaPeopleArrows size={30} style={{ color: "#47BEB9" }} />
+              </div>
+              <div className="fund_cont">
+                <h3 className="text-center text-uppercase fund">
+                  ${" "}
+                  <span>
+                    <CountUp start={0} end={1000} duration={3} />
+                  </span>
+                  K+
+                </h3>
+                <p className="fund_text">CONSULTING HOURS</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
