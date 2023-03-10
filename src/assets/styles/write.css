@@ -12,7 +12,7 @@
     /* padding: 3rem 0; */
     color: #160647;
     background-color: #fff;
-    background-image: url(../images/bg.svg);
+    /* background-image: url(../images/bg.svg); */
     background-position: 0rem 0rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -125,12 +125,12 @@
 
 .navbar_login{
     text-decoration: none;
-    color: #160647;
+    color: dodgerblue;
     margin-right: 1rem;
 }
 
 .navbar_login:hover{
-    color: #47BEB9;
+    color: #160647;
    
 }
 
@@ -140,7 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #47BEB9;
+    background-color: dodgerblue;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 100px;
@@ -154,7 +154,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/bg.svg);
+    /* background-image: url(../images/bg.svg); */
     background-position: 0rem 0rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +179,7 @@
 }
 
 .hero .g-text{
-    background: -webkit-linear-gradient(90deg, #160647, #47BEB9, #ddcd86);
+    background: -webkit-linear-gradient(90deg, dodgerblue, dodgerblue);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -340,12 +340,12 @@
 }
 
 .example_templates{
-    width: 95%;
+    width: 100%;
     margin: auto;
     background-color: #47beb815;
     padding: 3rem 0;
-    border-radius: 20px;
-
+    /* border-radius: 20px; */
+    
 }
 
 .example_template_card{

@@ -14,9 +14,16 @@
     font-size: 3rem;
 }
 
+.headers-small{
+    font-weight: bolder;
+    color: dodgerblue;
+    /* margin-top: 5rem; */
+    font-size: 1.8rem;
+}
+
 .cards_container{
     text-decoration: none;
-    color: #160647;
+    color: dodgerblue;
     display: block;
     /* line-height: 20px; */
     background: linear-gradient(300deg, #fff, #47beb819);

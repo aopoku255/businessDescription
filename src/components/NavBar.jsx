@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../logo.svg";
+import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 import { BsList, BsFillTriangleFill } from "react-icons/bs";
 import { FiChevronDown } from "react-icons/fi";
 import { IoMenu } from "react-icons/io5";
@@ -20,18 +20,19 @@ const NavBar = () => {
           <img src={logo} alt="" className="logo" />
         </Link>
         <ul className="navbar_items">
-          <li className="nav_links">
+          {/* <li className="nav_links">
             <Link to="/" className="links">
-              Sectors{" "}
-              <span>
+              About Us{" "} */}
+          {/* <span>
                 <FiChevronDown />
-              </span>
-            </Link>
-            <div className="triangle">
+              </span> */}
+          {/* </Link>
+            </li> */}
+          {/* <div className="triangle">
               <BsFillTriangleFill />
-            </div>
+            </div> */}
 
-            <ul className="nav_below shadow-lg">
+          {/* <ul className="nav_below shadow-lg">
               <li className=" nav_below__link_item">
                 <Link to="" className="nav_below__links">
                   Financial Services
@@ -67,9 +68,9 @@ const NavBar = () => {
                   Media
                 </Link>
               </li>
-            </ul>
-          </li>
-          <li className="nav_links">
+            </ul> */}
+
+          {/* <li className="nav_links">
             <Link href="/" className="links">
               Services
               <span>
@@ -134,18 +135,27 @@ const NavBar = () => {
             <Link href="/" className="links">
               Pitch Desk
             </Link>
-          </li>
+          </li> */}
         </ul>
 
         <div className="get_started">
-          <Link href="" className="navbar_login">
-            Login
-          </Link>
+          <NavLink to="/faqs" className="navbar_login">
+            FAQs
+          </NavLink>
+          <NavLink to="/about-us" className="navbar_login">
+            About Us
+          </NavLink>
+          <NavLink to="" className="navbar_login">
+            Contact Us
+          </NavLink>
+          <NavLink to="" className="navbar_login">
+            Blog
+          </NavLink>
           <Link
-            to="/write-now"
-            className="btn_getstarted text-decoration-none text-white"
+            to="/form"
+            className="btn_getstarted text-decoration-none text-white px-5"
           >
-            Write business plan now
+            Become an Inprov
           </Link>
         </div>
         <div className="d-sm-none">

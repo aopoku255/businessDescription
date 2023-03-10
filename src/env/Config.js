@@ -1,8 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import AboutUs from "../pages/AboutUs";
+import FAQ from "../pages/FAQ";
 import Home from "../pages/Home";
+import InservizForm from "../pages/InservizForm";
 import Login from "../pages/Login";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 import WriteNow from "../pages/WriteNow";
 
 const Config = () => {
@@ -14,7 +18,10 @@ const Config = () => {
       </Routes>
       <Routes>
         <Route exact path="/write-now" element={<WriteNow />} />
-        <Route exact path="/login" element={<Login />} />
+        <Route exact path="/form" element={<InservizForm />} />
+        <Route exact path="/about-us" element={<AboutUs />} />
+        <Route exact path="/faqs" element={<FAQ />} />
+        <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );
